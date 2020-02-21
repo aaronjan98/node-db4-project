@@ -7,7 +7,7 @@ const router = express.Router();
 
 // this router handles requests beginning in /api
 
-router.use("/api/recipes", recipesRouter);
-// router.use("/ingredients", ingredientsRouter);
+router.use("/recipes", recipesRouter);
+// router.use("/api/ingredients", ingredientsRouter);
 
 module.exports = router;
