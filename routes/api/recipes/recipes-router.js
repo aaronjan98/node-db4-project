@@ -5,7 +5,7 @@ const Recipes = require('../../../data/db-helpers.js');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  Recipes.find()
+  Recipes.getRecipes()
   .then(recipes => {
     res.json(recipes);
   })
